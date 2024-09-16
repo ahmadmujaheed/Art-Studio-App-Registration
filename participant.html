@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Studio App</title>
+    <link rel="stylesheet" href="./participant.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <nav>
+        <div class="nav">
+            <div><h1>Logo</h1></div>
+            <div class="nav_links">
+                <a href="./index.html"><li>Home</li></a>
+                <li>shop</li>
+                <li>products</li>
+                <li>features</li>
+                <li>pages</li>
+                <a href="participant.html"><li>registration</li></a>
+                <div class="nav_icons">
+                    <img src="./image/icon/search-interface-symbol.png" class="icon">
+                    <img src="./image/icon/gear.png" class="icon">
+                    <img src="./image/icon/shopping-cart.png" class="icon">
+                </div>
+            </div>
+        </div>
+        
+    </nav>
+    <button id="btn_register">Register a Participant</button>
+    
+    <div class="container">
+        <div id="registrationSummary" class="hidden">
+            <h2>Registration Summary</h2>
+            <p id="details"></p>
+        </div>
+
+        <div class="main-content">
+            
+            
+            <div class="header">REGISTERED PARTICIPANTS</div>
+
+            <div class="participantsContainer">
+                <!--Registered Participants should be dispalyed here-->
+            </div>
+        </div>
+
+        <!-- <p id="err_message"></p> -->
+
+    </div>
+
+    <div class="modal" id="modalContainer">
+        <div class="modalContent">
+            <div class="modalHeader">
+                <h2 id="modalTitle">Register a Participant</h2>
+                <span class="modalClose" id="modalClose">&times;</span>
+            </div>
+            <form id="ModalForm">
+                <div>
+                    <input type="text" class="" name="name" id="name" placeholder="Enter your Name">
+                    <div>
+                        <span id="name_err"></span>
+                    </div>
+                    <input type="number" class="" name="age" id="age" placeholder="Enter your Age">
+                    <div>
+                        <span id="age_err"></span>
+                    </div>
+                    <input type="text" class="" name="phone" id="phone" placeholder="Enter your Phone">
+                    <div>
+                        <span id="phone_err"></span>
+                    </div>
+                    <input type="email" class="" name="email" id="email" placeholder="Enter your Email">
+                    <div>
+                        <span id="email_err"></span>
+                    </div>
+                </div>
+                <div id="guardian" class="hidden">
+                    <input type="text" class="" name="g_name" id="g_name" placeholder="Enter Guardian Name">
+                    <div>
+                        <span id="g_name_err"></span>
+                    </div>
+                    <input type="text" class="" name="g_phone" id="g_phone" placeholder="Enter Guardian Phone">
+                    <div>
+                        <span id="g_phone_err"></span>
+                    </div>
+                    <input type="email" class="" name="g_email" id="g_email" placeholder="Enter Guardian Email">
+                    <div>
+                        <span id="g_email_err"></span>
+                    </div>
+                </div>
+                <div>
+                    <!-- <input type="date" class="" name="date" id="date">
+                    <span id="date_err"></span> -->
+                    <!-- <input type="time" class="" name="time" id="time">
+                    <span id="time_err"></span> -->
+                    <select id="select_class" name="select_class" onchange="changeSlots()">
+                        <option value="">Select class type</option>
+                       <!--Option of class type will be displayed here-->
+                    </select>
+                    <select id="select_slot" name="select_slot">
+                        <option vlaue="">Select Available Slot</option>
+                        <!--slot should be displayed here-->
+                    </select>
+                    <input type="number" id="noOfParticipants" name="noOfParticipants" placeholder="No of Participants">
+                    <span id="part_err"></span>
+                </div>
+    
+                <!-- <button type="button" onclick="submitreg()">Submit</button> -->
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        
+    </div>
+
+    <div class="section_seven">
+        <div class="container">
+
+            <div class=section_seven_item1>
+                <div class="item1_text">
+                    <h4>KNOW IT ALL FIRST!</h4>
+                    <P>Never Miss Anything From Multikart By Signing Up To Our Newsletter.</P>
+                </div>
+                <div class="item1_btn">
+                    <input placeholder="Enter your email" type="text">
+                    <button>SUBSCRIBE</button>
+                </div>
+            </div>
+            <div class="line"></div>
+    
+            <div class="section_seven_item2">
+                <div class="section_seven_item2_text">
+                    <div>
+                        <h1>Logo</h1>
+                        <!-- <img src="./image/logo.png" alt="logo">  -->
+                    </div>
+                    <div class="text_seven">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+                        <p>elit, sed do eiusmod tempor incididunt ut labore et</p>
+                        <p>dolore magna aliqua. Ut enim ad minim veniam,</p>
+                    </div>
+                    <div class="section_seven_icon">
+                        <img src="./image/icon/facebook-app-symbol.png" alt="" class="icon">
+                        <img src="./image/icon/google-plus-logo.png" alt="" class="icon">
+                        <img src="./image/icon/twitter.png" alt="" class="icon">
+                        <img src="./image/icon/instagram.png" alt="" class="icon">
+                        <img src="./image/icon/wifi-signal.png" alt="" class="icon">
+                    </div>
+                </div>
+                <div class="categories">
+                    <h3>CATEGORIES</h3>
+                    <ul>
+                        <li>Womens Arts</li>
+                        <li>Mens Arts</li>
+                        <li>Kids Arts</li>
+                        <li>Featured</li>
+                    </ul>
+                </div>
+    
+                <div class="categories">
+                    <h3>WHY WE CHOOSE</h3>
+                    <ul>
+                        <li>Shipping & Return</li>
+                        <li>Secure Shopping</li>
+                        <li>Gallary</li>
+                        <li>Affiliates</li>
+                        <li>Contacts</li>
+                    </ul>
+                </div>
+                
+                <div class="categories">
+                    <h3>STORE INFORMATION</h3>
+                    <ul>
+                        <li>Art Demo Store,<br>Demo Store Nigeria 345-659</li>
+                        <li>Mens Art</li>
+                        <li>Kids Art</li>
+                        <li>Featured</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+            
+    
+    </div>
+    
+    <script src="./participant.js"></script>
+</body>
+</html>

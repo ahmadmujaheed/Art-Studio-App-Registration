@@ -1,0 +1,230 @@
+.main-content{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    padding: 0px;
+  }
+  
+  .header{
+    /* background-color: #998300; */
+    background-color: red;
+    height:40px;
+    margin-top: 150px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+    color:rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .participantsContainer{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:15px;
+    /* margin-top:50px; */
+  }
+
+  .participant-Item{
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding:15px;
+    position:relative;
+    box-shadow:0 4px 8px rgba(0,0,0, 0.1);
+    transition:background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .participant-Item:hover{
+    background-color:#e8f5e9;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+  }
+
+  .participant-Item .icon{
+    position:absolute;
+    top:10px;
+    right:10px;
+    cursor:pointer;
+  }
+
+  .dropdown-menu{
+    display:none;
+    position:absolute;
+    top:30px;
+    right:10px;
+    background-color: white;
+    border:1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,00.1);
+    z-index: 10;
+  }
+
+  .dropdown-menu a{
+    display:block;
+    padding:10px;
+    text-decoration: none;
+    color:#333;
+    font-size: 14px;
+  }
+
+  .dropdown-menu a:hover{
+    background-color: #f1f1f1;
+  }
+
+.hidden{
+    display:none;
+}
+
+.modal{
+    display:none;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color: rgb(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+  }
+
+  .modalContent{
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width:90%;
+    max-width: 500px;
+    overflow-y: scroll;
+    height:90%;
+  }
+
+  .modalHeader{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+
+  .modalHeader h2{
+    margin:0;
+  }
+  
+  .modalClose{
+    cursor:pointer;
+    font-size: 20px;
+    color:#333
+  }
+
+  /* form input[type="text"]{
+    width:95%;
+    padding:10px;
+    border:1px solid #ddd;
+    border-radius:5px;
+    margin-bottom:15px;
+    font-size:14px;
+  } */
+
+  /* form{
+    z-index: 5;
+  } */
+
+  form input{
+    width:95%;
+    padding:10px;
+    border:1px solid #ddd;
+    border-radius:5px;
+    margin-bottom:15px;
+    font-size:14px;
+  }
+
+  form button{
+    padding: 10px 20px;
+    /* background-color: #998300; */
+    background-color: red;
+    border:none;
+    color:white;
+    border-radius: 5px;
+    cursor:pointer;
+    font-size: 16px;
+    transition:background-color 0.3s ease;
+  }
+
+  form button:hover{
+    background-color: white;
+    color:#084233;
+    border:1px solid red
+  }
+
+  #btn_register{
+    /* margin:70px; */
+    position: absolute;
+    top:120px;
+    left:135px;
+    padding:10px 20px;
+    /* background-color: #998300; */
+    background-color: red;
+    border:none;
+    color:white;
+    border-radius: 5px;
+    cursor:pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  #btn_register:hover{
+    background-color: white;
+    color:black;
+    border:1px solid red
+  }
+
+  /* a{
+    margin:20px;
+    padding:10px 20px;
+    background-color: #998300;
+    border:none;
+    color:white;
+    border-radius: 5px;
+    cursor:pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+  }
+
+  a:hover{
+    background-color: white;
+    color:#084233;
+    border:1px solid #084233
+  } */
+
+  @media(min-width:760px) and (max-width:1440px){
+    
+  }
+
+  @media(min-width:320px) and (max-width:425px){
+    .participantsContainer{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap:10px;
+      /* margin-top:50px; */
+    }
+
+    #btn_register{
+      /* margin:70px; */
+      position: absolute;
+      top:120px;
+      left:31px;
+      padding:10px 20px;
+      /* background-color: #998300; */
+      background-color: red;
+      border:none;
+      color:white;
+      border-radius: 5px;
+      cursor:pointer;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+    }
+    
+  }
+
+
+  
